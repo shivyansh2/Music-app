@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article Card Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] min-h-screen flex items-center justify-center p-4 font-sans antialiased">
 
+  <article class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <div class="relative h-64 w-full">
+      <img 
+        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" 
+        alt="Living Room Interior Design" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="p-6">
+      <span class="inline-block bg-emerald-50 text-emerald-600 text-xs font-medium px-3 py-1 rounded-full mb-3">
+        Interior
+      </span>
+      <h2 class="text-xl font-bold text-slate-900 leading-snug mb-2">
+        Top 5 Living Room Inspirations
+      </h2>
+      <p class="text-slate-500 text-sm leading-relaxed mb-6">
+        Curated vibrants colors for your living, make it pop & calm in the same time.
+      </p>
+      <a href="#" class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold text-sm group transition-colors">
+        Read more
+        <!-- Right Arrow SVG -->
+        <svg 
+          class="w-4 h-4 transition-transform group-hover:translate-x-1" 
+          viewBox="0 0 20 20" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path 
+            d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z" 
+            fill="currentColor" 
+          />
+        </svg>
+      </a>
+
+    </div>
+
+  </article>
+
+</body>
+</html>
